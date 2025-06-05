@@ -10,6 +10,13 @@ body {
   min-inline-size: 375px;
   max-inline-size: 1440px;
   margin: 0 auto;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  font-family: "IBM Plex Mono", "Courier New", Courier, monospace;
+  font-size: 18px;
+  line-height: 23.4px;
+  letter-spacing: 0;
 }
 
 h1,

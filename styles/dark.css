@@ -1,16 +1,98 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
-:root.theme-dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+.theme-dark .page::before {
+  background-color: var(--color-page);
+  background-image: url(../images/cover-image-dark.png);
 }
 
-.theme-dark .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
+.theme-dark .rec-indicator {
+  position: absolute;
+  top: var(--padding);
+  right: clamp(19px, calc(19px + 10 * ((100vw - 375px) / 393)), 29px);
+  padding-right: 18px;
+  color: var(--color-highlight);
+  line-height: 25px;
+}
+
+.theme-dark .rec-indicator::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: var(--color-highlight);
+  box-shadow: 0 0 4px 2px var(--color-highlight);
+}
+
+.theme-dark .title-decor {
+  color: var(--color-page);
+}
+
+.theme-dark .header__theme-menu-item {
+  color: var(--color-highlight);
+}
+
+.theme-dark .header__theme-menu-button:hover {
+  border: 1px solid var(--color-highlight-transparent);
+}
+
+.theme-dark .header__theme-menu-button:focus {
+  border-bottom: 1px solid var(--color-highlight);
+}
+
+.theme-dark .header__theme-menu-button_active {
+  border: 1px solid var(--color-highlight);
+}
+
+.theme-dark .content__question {
+  color: var(--color-highlight);
+}
+
+.theme-dark .header::before {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 25px;
+  display: block;
+  border-inline-end: 1px solid var(--color-highlight);
+  border-block-start: 1px solid var(--color-highlight);
+  right: var(--padding);
+  top: var(--padding);
+}
+
+.theme-dark .header::after {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 25px;
+  display: block;
+  border-inline-start: 1px solid var(--color-highlight);
+  border-block-end: 1px solid var(--color-highlight);
+  left: var(--padding);
+  bottom: var(--padding);
+}
+
+.theme-dark .footer::before {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 25px;
+  display: block;
+  border-inline-end: 1px solid var(--color-highlight);
+  border-block-start: 1px solid var(--color-highlight);
+  right: var(--padding);
+  top: var(--padding);
+}
+
+.theme-dark .footer::after {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 25px;
+  display: block;
+  border-inline-start: 1px solid var(--color-highlight);
+  border-block-end: 1px solid var(--color-highlight);
+  left: var(--padding);
+  bottom: var(--padding);
 }

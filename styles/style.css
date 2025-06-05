@@ -14,6 +14,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   z-index: -1;
   pointer-events: none;
 }
@@ -157,7 +158,7 @@
 
 .text-section {
   margin-block-start: 40px;
-  margin-block-end: 79px;
+  margin-block-end: 48px;
   row-gap: clamp(50px, calc(50px + 30 * ((100vw - 375px) / 393)), 80px);
 }
 
@@ -220,7 +221,11 @@
 .footer {
   position: relative;
   justify-items: center;
-  margin-block: clamp(40px, calc(40px + 22 * ((100vw - 375px) / 393)), 62px);
+  margin-block-start: clamp(
+    40px,
+    calc(40px + 22 * ((100vw - 375px) / 393)),
+    62px
+  );
 }
 
 .footer::before {

@@ -1,4 +1,4 @@
-.theme-light .page::before {
+.theme-light .page {
   background-color: var(--color-page);
   background-image: url(../images/cover-image-light.png);
 }
@@ -84,7 +84,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-  .theme-light .page::before {
+  .theme-light .page {
     background-color: var(--color-page);
     background-image: url(../images/cover-image-light.png);
   }

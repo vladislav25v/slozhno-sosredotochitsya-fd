@@ -1,4 +1,4 @@
-.theme-dark .page::before {
+.theme-dark .page {
   background-color: var(--color-page);
   background-image: url(../images/cover-image-dark.png);
 }

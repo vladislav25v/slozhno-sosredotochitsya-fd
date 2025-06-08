@@ -1,3 +1,5 @@
+https://github.com/vladislav25v/slozhno-sosredotochitsya-fd
+
 # Hard to Focus — Practicum Project
 
 A responsive single‑page website that explores the feeling of being overwhelmed and distracted in the digital age.  

@@ -5,6 +5,7 @@
 }
 
 .title-decor {
+  align-self: start;
   background-color: var(--color-highlight);
   color: var(--color-page);
   font-weight: 700;
@@ -21,8 +22,32 @@
   border-bottom: 1px solid currentColor;
 }
 
-.link-decoration:focus {
+.link-decoration:focus-visible {
   border: 1px solid currentColor;
+}
+
+.decorated-zone::before {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 25px;
+  display: block;
+  border-inline-end: 1px solid var(--color-highlight);
+  border-block-start: 1px solid var(--color-highlight);
+  right: var(--padding);
+  top: var(--padding);
+}
+
+.decorated-zone::after {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 25px;
+  display: block;
+  border-inline-start: 1px solid var(--color-highlight);
+  border-block-end: 1px solid var(--color-highlight);
+  left: var(--padding);
+  bottom: var(--padding);
 }
 
 @media (768px <= width) {

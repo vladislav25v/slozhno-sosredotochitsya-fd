@@ -1,171 +1,27 @@
-.theme-light .page {
-  background-color: var(--color-page);
-  background-image: url(../images/cover-image-light.png);
+:root.theme-light {
+  --cover-image: url("../images/cover-image-light.png");
+  --color-title: #ffc2e6;
+  --color-highlight: #ff8dcb;
+  --color-page: #fff1f7;
+  --color-text: #353430;
+  --color-text-transparent: rgba(53, 52, 48, 0.4);
 }
 
 .theme-light .rec-indicator {
   display: none;
 }
 
-.theme-light .rec-indicator::after {
-  display: none;
-}
-
-.theme-light .title-decor {
-  color: var(--color-text);
-}
-
-.theme-light .header__theme-menu-item {
-  color: var(--color-text);
-}
-
-.theme-light .header__theme-menu-button:hover {
-  border: 1px solid var(--color-text-transparent);
-}
-
-.theme-light .header__theme-menu-button:focus {
-  border-bottom: 1px solid var(--color-text);
-}
-
-.theme-light .header__theme-menu-button_active {
-  border: 1px solid var(--color-text);
-}
-
-.theme-light .content__question {
-  color: var(--color-text);
-}
-
-.theme-light .header::before {
-  position: absolute;
-  content: "";
-  width: 25px;
-  height: 25px;
-  display: block;
-  border-inline-end: 1px solid var(--color-text);
-  border-block-start: 1px solid var(--color-text);
-  right: var(--padding);
-  top: var(--padding);
-}
-
-.theme-light .header::after {
-  position: absolute;
-  content: "";
-  width: 25px;
-  height: 25px;
-  display: block;
-  border-inline-start: 1px solid var(--color-text);
-  border-block-end: 1px solid var(--color-text);
-  left: var(--padding);
-  bottom: var(--padding);
-}
-
-.theme-light .footer::before {
-  position: absolute;
-  content: "";
-  width: 25px;
-  height: 25px;
-  display: block;
-  border-inline-end: 1px solid var(--color-text);
-  border-block-start: 1px solid var(--color-text);
-  right: var(--padding);
-  top: var(--padding);
-}
-
-.theme-light .footer::after {
-  position: absolute;
-  content: "";
-  width: 25px;
-  height: 25px;
-  display: block;
-  border-inline-start: 1px solid var(--color-text);
-  border-block-end: 1px solid var(--color-text);
-  left: var(--padding);
-  bottom: var(--padding);
-}
-
 @media (prefers-color-scheme: light) {
-  .theme-light .page {
-    background-color: var(--color-page);
-    background-image: url(../images/cover-image-light.png);
+  :root.theme-auto {
+    --cover-image: url("../images/cover-image-light.png");
+    --color-title: #ffc2e6;
+    --color-highlight: #ff8dcb;
+    --color-page: #fff1f7;
+    --color-text: #353430;
+    --color-text-transparent: rgba(53, 52, 48, 0.4);
   }
 
-  .theme-light .rec-indicator {
+  .theme-auto .rec-indicator {
     display: none;
-  }
-
-  .theme-light .rec-indicator::after {
-    display: none;
-  }
-
-  .theme-light .title-decor {
-    color: var(--color-text);
-  }
-
-  .theme-light .header__theme-menu-item {
-    color: var(--color-text);
-  }
-
-  .theme-light .header__theme-menu-button:hover {
-    border: 1px solid var(--color-text-transparent);
-  }
-
-  .theme-light .header__theme-menu-button:focus {
-    border-bottom: 1px solid var(--color-text);
-  }
-
-  .theme-light .header__theme-menu-button_active {
-    border: 1px solid var(--color-text);
-  }
-
-  .theme-light .content__question {
-    color: var(--color-text);
-  }
-
-  .theme-light .header::before {
-    position: absolute;
-    content: "";
-    width: 25px;
-    height: 25px;
-    display: block;
-    border-inline-end: 1px solid var(--color-text);
-    border-block-start: 1px solid var(--color-text);
-    right: var(--padding);
-    top: var(--padding);
-  }
-
-  .theme-light .header::after {
-    position: absolute;
-    content: "";
-    width: 25px;
-    height: 25px;
-    display: block;
-    border-inline-start: 1px solid var(--color-text);
-    border-block-end: 1px solid var(--color-text);
-    left: var(--padding);
-    bottom: var(--padding);
-  }
-
-  .theme-light .footer::before {
-    position: absolute;
-    content: "";
-    width: 25px;
-    height: 25px;
-    display: block;
-    border-inline-end: 1px solid var(--color-text);
-    border-block-start: 1px solid var(--color-text);
-    right: var(--padding);
-    top: var(--padding);
-  }
-
-  .theme-light .footer::after {
-    position: absolute;
-    content: "";
-    width: 25px;
-    height: 25px;
-    display: block;
-    border-inline-start: 1px solid var(--color-text);
-    border-block-end: 1px solid var(--color-text);
-    left: var(--padding);
-    bottom: var(--padding);
   }
 }

@@ -1,6 +1,10 @@
-.theme-dark .page {
-  background-color: var(--color-page);
-  background-image: url(../images/cover-image-dark.png);
+:root.theme-dark {
+  --cover-image: url("../images/cover-image-dark.png");
+  --color-title: #db00ff;
+  --color-highlight: #ff0070;
+  --color-highlight-transparent: rgba(255, 0, 112, 0.4);
+  --color-page: #000028;
+  --color-text: #f1b2ce;
 }
 
 .theme-dark .rec-indicator {
@@ -23,76 +27,4 @@
   border-radius: 50%;
   background-color: var(--color-highlight);
   box-shadow: 0 0 4px 2px var(--color-highlight);
-}
-
-.theme-dark .title-decor {
-  color: var(--color-page);
-}
-
-.theme-dark .header__theme-menu-item {
-  color: var(--color-highlight);
-}
-
-.theme-dark .header__theme-menu-button:hover {
-  border: 1px solid var(--color-highlight-transparent);
-}
-
-.theme-dark .header__theme-menu-button:focus {
-  border-bottom: 1px solid var(--color-highlight);
-}
-
-.theme-dark .header__theme-menu-button_active {
-  border: 1px solid var(--color-highlight);
-}
-
-.theme-dark .content__question {
-  color: var(--color-highlight);
-}
-
-.theme-dark .header::before {
-  position: absolute;
-  content: "";
-  width: 25px;
-  height: 25px;
-  display: block;
-  border-inline-end: 1px solid var(--color-highlight);
-  border-block-start: 1px solid var(--color-highlight);
-  right: var(--padding);
-  top: var(--padding);
-}
-
-.theme-dark .header::after {
-  position: absolute;
-  content: "";
-  width: 25px;
-  height: 25px;
-  display: block;
-  border-inline-start: 1px solid var(--color-highlight);
-  border-block-end: 1px solid var(--color-highlight);
-  left: var(--padding);
-  bottom: var(--padding);
-}
-
-.theme-dark .footer::before {
-  position: absolute;
-  content: "";
-  width: 25px;
-  height: 25px;
-  display: block;
-  border-inline-end: 1px solid var(--color-highlight);
-  border-block-start: 1px solid var(--color-highlight);
-  right: var(--padding);
-  top: var(--padding);
-}
-
-.theme-dark .footer::after {
-  position: absolute;
-  content: "";
-  width: 25px;
-  height: 25px;
-  display: block;
-  border-inline-start: 1px solid var(--color-highlight);
-  border-block-end: 1px solid var(--color-highlight);
-  left: var(--padding);
-  bottom: var(--padding);
 }

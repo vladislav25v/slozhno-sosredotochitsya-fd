@@ -47,3 +47,8 @@ a {
   font-size: inherit;
   line-height: inherit;
 }
+
+:focus {
+  outline: none;
+  box-shadow: none;
+}

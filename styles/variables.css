@@ -1,28 +1,9 @@
 :root {
   --padding: clamp(10px, calc(10px + 10 * ((100vw - 375px) / 393)), 20px);
-
   --cover-image: url("../images/cover-image-dark.png");
   --color-title: #db00ff;
   --color-highlight: #ff0070;
   --color-highlight-transparent: rgba(255, 0, 112, 0.4);
   --color-page: #000028;
   --color-text: #f1b2ce;
-}
-
-:root.theme-dark {
-  --cover-image: url("../images/cover-image-dark.png");
-  --color-title: #db00ff;
-  --color-highlight: #ff0070;
-  --color-highlight-transparent: rgba(255, 0, 112, 0.4);
-  --color-page: #000028;
-  --color-text: #f1b2ce;
-}
-
-:root.theme-light {
-  --cover-image: url("../images/cover-image-light.png");
-  --color-title: #ffc2e6;
-  --color-highlight: #ff8dcb;
-  --color-page: #fff1f7;
-  --color-text: #353430;
-  --color-text-transparent: rgba(53, 52, 48, 0.4);
 }

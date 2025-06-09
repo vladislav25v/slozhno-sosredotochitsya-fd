@@ -295,7 +295,7 @@
 
 .theme-light .page {
   background-color: var(--color-page);
-  background-image: url(../images/cover-image-light.png);
+  background-image: url(--cover-image:);
 }
 
 .theme-light .title-decor {
@@ -325,7 +325,7 @@
 @media (prefers-color-scheme: light) {
   .theme-auto .page {
     background-color: var(--color-page);
-    background-image: url(../images/cover-image-light.png);
+    background-image: url(--cover-image);
   }
 
   .theme-auto .title-decor {

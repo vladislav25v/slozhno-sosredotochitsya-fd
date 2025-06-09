@@ -99,8 +99,8 @@
 .header__description {
   grid-column: span 12;
   margin-block-start: clamp(
-    14px,
-    calc(20px + 107 * ((100vw - 375px) / 393)),
+    30px,
+    calc(30px + 6 * ((100vw - 375px) / 393)),
     36px
   );
 }
@@ -108,15 +108,14 @@
 .main {
   margin-block-start: clamp(
     40px,
-    calc(40px + 10 * ((100vw - 375px) / 393)),
-    50px
+    calc(40px + 21 * ((100vw - 375px) / 393)),
+    61px
   );
 
   padding-inline: clamp(10px, calc(10px + 10 * ((100vw - 375px) / 393)), 20px);
 }
 
 .text-section {
-  margin-block-start: 61px;
   margin-block-end: clamp(
     48px,
     calc(48px + 32 * ((100vw - 375px) / 393)),

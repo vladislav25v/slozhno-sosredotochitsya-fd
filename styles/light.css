@@ -1,10 +1,14 @@
 :root.theme-light {
   --cover-image: url("../images/cover-image-light.png");
+  --color-page: #fff1f7;
   --color-title: #ffc2e6;
   --color-highlight: #ff8dcb;
-  --color-page: #fff1f7;
+  --color-button: #353430;
+  --color-decor-element: #353430;
+  --color-hover-border: rgba(53, 52, 48, 0.4);
+  --color-question: #353430;
+  --color-content__title: #353430;
   --color-text: #353430;
-  --color-text-transparent: rgba(53, 52, 48, 0.4);
 }
 
 .theme-light .rec-indicator {
@@ -14,11 +18,15 @@
 @media (prefers-color-scheme: light) {
   :root.theme-auto {
     --cover-image: url("../images/cover-image-light.png");
+    --color-page: #fff1f7;
     --color-title: #ffc2e6;
     --color-highlight: #ff8dcb;
-    --color-page: #fff1f7;
+    --color-button: #353430;
+    --color-decor-element: #353430;
+    --color-hover-border: rgba(53, 52, 48, 0.4);
+    --color-question: #353430;
+    --color-content__title: #353430;
     --color-text: #353430;
-    --color-text-transparent: rgba(53, 52, 48, 0.4);
   }
 
   .theme-auto .rec-indicator {
